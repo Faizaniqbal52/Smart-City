@@ -1,0 +1,261 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #9c9494; /* Light gray background */
+}
+
+header {
+    background-color: #4f918b; /* Dark gray header background */
+    color: #185a2e;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #555;
+}
+
+.section {
+    padding: 50px 20px;
+    background-color: #9e5330; /* White section background */
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #ffffff;
+}
+
+footer {
+    background-color: #b4b231;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Specific Styles */
+
+/* Dashboard Section */
+#traffic, #air, #waste, #safety, #energy, #water, #mobility, #access, #engagement, #resilience {
+    background-color: #f9f9f9; /* Dashboard section background color */
+}
+
+#traffic h2, #air h2, #waste h2, #safety h2, #energy h2, #water h2, #mobility h2, #access h2, #engagement h2, #resilience h2 {
+    color: #333; /* Dashboard section heading color */
+}
+
+#traffic p, #air p, #waste p, #safety p, #energy p, #water p, #mobility p, #access p, #engagement p, #resilience p {
+    color: #666; /* Dashboard section text color */
+}
+
+/* Glitter Animation for Dashboard Links */
+.dashboard-link {
+    color: #333; /* Dashboard navigation link color */
+    text-decoration: none;
+    font-weight: bold;
+    animation: glitter 1s ease infinite; /* Apply glitter animation to dashboard links */
+}
+
+/* Define the glitter animation */
+@keyframes glitter {
+    0% {
+        color: #ff5733;
+    }
+    100% {
+        color: #ff5733;
+        text-shadow: 0 0 10px #ff5733; /* Glitter effect */
+    }
+}
+/* Specific Styles */
+
+#traffic-content {
+    background-color: #538f1c; /* Light gray content background */
+}
+
+#traffic-content h2 {
+    color: #333;
+}
+
+#traffic-content p {
+    color: #666;
+}
+
+#traffic-graph {
+    background-color: #aace48; /* White graph background */
+    border: 1px solid #ccc; /* Gray border */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#traffic-image {
+    text-align: center; /* Center image */
+    margin-bottom: 20px;
+}
+
+#traffic-image img {
+    max-width: 10%; /* Ensure image fits container */
+    height: auto; /* Preserve aspect ratio */
+    width: auto;
+}
+
+/* Styles for Air Pollution Section */
+
+#air-content {
+    background-color: #1a1a1a; /* Dark gray content background */
+}
+
+#air-content h2 {
+    color: #ffae42; /* Orange heading color */
+}
+
+#air-content p {
+    color: #cccccc; /* Light gray text color */
+}
+
+#smoke {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('smoke.png') no-repeat center center;
+    background-size: cover;
+    opacity: 0;
+    pointer-events: none; /* Prevents clicks on smoke */
+    z-index: 9999; /* Ensure smoke is above other elements */
+}
+
+/* Styles for Air Pollution Data */
+
+#air-data {
+    margin-top: 30px;
+}
+
+#air-data h3 {
+    color: #ffae42; /* Orange heading color */
+}
+
+#air-data table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#air-data th,
+#air-data td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#air-data th {
+    background-color: #f2f2f2; /* Light gray background for table header */
+    color: #333; /* Dark gray text color for table header */
+}
+
+#air-data tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternate row background color */
+}
+
+/* Additional CSS for Waste Management Page */
+
+/* Styles for Waste Reduction Tips */
+#waste-reduction-tips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.tip {
+    width: 30%;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.tip h3 {
+    color: #333;
+    font-size: 1.2em;
+}
+
+.tip p {
+    color: #666;
+}
+
+/* Styles for Community Initiatives Gallery */
+#community-initiatives-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.initiative {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.initiative h3 {
+    color: #333;
+    font-size: 1.2em;
+}
+
+.initiative p {
+    color: #666;
+}
+
+/* Styles for Get Involved Actions */
+#get-involved-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.action {
+    width: 30%;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.action h3 {
+    color: #333;
+    font-size: 1.2em;
+}
+
+.action p {
+    color: #666;
+}

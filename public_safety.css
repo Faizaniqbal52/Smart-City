@@ -1,0 +1,152 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Updated font stack */
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Light gray background */
+}
+
+header {
+    background-color: #333; /* Dark gray header background */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #ff5733; /* Orange border bottom */
+    position: relative; /* Add position relative for pseudo-element positioning */
+}
+
+/* Glow Animation for Header Title */
+header h1 {
+    font-size: 36px; /* Adjust font size as needed */
+    position: relative; /* Ensure stacking context */
+    display: inline-block; /* Allow box-shadow to wrap around */
+    animation: glow 2s ease-in-out infinite alternate; /* Apply glow animation */
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #ff5733; /* Initial shadow effect */
+    }
+    100% {
+        text-shadow: 0 0 20px #ff5733; /* Final shadow effect */
+    }
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px 5px #ff5733; /* Initial shadow effect */
+    }
+    100% {
+        box-shadow: 0 0 20px 10px #ff5733; /* Final shadow effect */
+    }
+}
+
+/* Glitter Animation */
+@keyframes glitter {
+    0% {
+        filter: brightness(100%);
+    }
+    50% {
+        filter: brightness(200%);
+    }
+    100% {
+        filter: brightness(100%);
+    }
+}
+.content p {
+    animation: moveText 5s infinite alternate; /* Apply animation */
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+nav ul li a:hover,
+nav ul li a:focus {
+    animation: glitter 1s ease infinite; /* Apply glitter animation */
+}
+
+/* Add more specific styles as needed */
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Center align navigation items */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #666; /* Gray text color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    color: #ff5733; /* Orange hover color */
+}
+
+.section {
+    padding: 50px 20px;
+}
+
+.content p {
+    animation: moveText 5s infinite alternate; /* Apply animation */
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    color: #333; /* Dark gray heading color */
+    font-size: 28px; /* Increased font size for headings */
+    text-align: center; /* Center align headings */
+    margin-bottom: 20px; /* Add some spacing between headings and paragraphs */
+}
+
+p {
+    color: #666; /* Gray text color */
+    font-size: 16px; /* Normal font size for paragraphs */
+    line-height: 1.6; /* Improved readability with increased line height */
+}
+
+footer {
+    background-color: #333; /* Dark gray footer background */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 20px;
+    clear: both; /* Clear floats */
+}
+
+/* Specific Styles */
+
+/* Smart Surveillance Systems Section */
+#surveillance {
+    background-color: #f5f5f5; /* Light gray content background */
+}
+
+/* Emergency Response Systems Section */
+#emergency {
+    background-color: #f5f5f5; /* Light gray content background */
+}
